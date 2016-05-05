@@ -16,3 +16,7 @@ First day of Senior projects! I'm beginning to realize what I've gotten myself i
 I finally found the developer controls on the phone! Only took an hour or so. Turns out ZTE phones hide them in a different place than standard Android phones. It's under a different tab and labeled differently. Plus they make it so you have to tap the icon four times before the developer controls get turned on. 
 
 Spent the last couple of hours trying to get the phone to connect to the Android Studios. I can access the files on the phone but the studios won't recognize the phone as a device. No idea why. I have tried changing the way the phone connects, MTP and PTP, most of the developer controls and tried installing google usb software. None of it has worked. Very frustrated with this whole thing. 
+
+######May 4, 2016
+
+After several days of sickness I'm finally feeling well enough to look at a screen. Today I completed the button intro. Took a while but taught me how important the order of code is. In the Android Studio, there's several sections of code generated with every new tab opened and certain things have to go in certain places or it returns errors that point back to the base code. Which is very frustrating. However now I know how to start new activities and activate them using buttons. 
