@@ -38,3 +38,5 @@ I've found the script for the color picker. Now I just have to move the parts I 
 ######May 11, 2016
 
 I've decided to change the format of the project. Now instead of having three screens I hope to only have two. The first one will have four buttons on it. One to select a color to change, another to select the one that is replacing the first one, the third to confirm that the change should be made. Once the third is pressed the colors should reset. The final button will be used to access the second screen which will show all the changes that have been made. Hopefully I will have little 'x's next to them to revert the change but that may not be feasible. This whole thing seems like a big stretch with my limited knowledge but we'll see what happens. 
+
+This is very interesting. I tried to import the library by including both a statement saying its dependent on the color picker. Then that didn't work for some reason. So I tried to putting an include "color picker file name" in the gradle settings. That fixed a lot of the problems but not all of them. I feel like I'm still missing some part of the library but I don't know where to look to get it. 
