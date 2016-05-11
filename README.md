@@ -20,3 +20,21 @@ Spent the last couple of hours trying to get the phone to connect to the Android
 ######May 4, 2016
 
 After several days of sickness I'm finally feeling well enough to look at a screen. Today I completed the button intro. Took a while but taught me how important the order of code is. In the Android Studio, there's several sections of code generated with every new tab opened and certain things have to go in certain places or it returns errors that point back to the base code. Which is very frustrating. However now I know how to start new activities and activate them using buttons. 
+
+######May 9,2016
+
+Over the last few days I've been planning out the interface of the app. I now want to have three screens. One of select a color to change, one to select the replacement color and a final one to display which colors have been changed. I found someone elses project that has a color picker which I plan to use. It'll teach me how to imbed other peoples libraries into my own project. Today I had a mix-up with build values. The phone that I'm using to test uses an older version of SDK so I had to figure out how to change that. They make it pretty easy. Just change a value and the whole build recompiles into the new version. 
+
+Currently I am trying to create my own button that starts another activity without the help of the guide and I am failing miserably. There's going to be a lot of that I feel like. The guide walks through a bunch of steps that seem like they shouldn't matter like displaying message, sending the string with the message in it etc. I want to eluminate those steps somehow. It's an interesting balance of not putting lines then realizing I need them or putting lines and realizing I don't need them. The whole things very frustrating.
+
+And it works! The button now opens a new activity! Now I have to embed a library into it.
+
+I have now added the color selector to the second screen. Seems to work pretty well. allows most colors to be selected very easily. Now I need to find where the output of what color that's selected gets put. I'll then hopefully add a way so that the background changes based upon the color selected. Only problem is the white in the center is pretty hard to select.
+
+######May 10, 2016
+
+I've found the script for the color picker. Now I just have to move the parts I need into the script I have set up. After looking into how to add the color selector, I decided to try to add the color selector as a library. Tomorrow I will be looking more into that.
+
+######May 11, 2016
+
+I've decided to change the format of the project. Now instead of having three screens I hope to only have two. The first one will have four buttons on it. One to select a color to change, another to select the one that is replacing the first one, the third to confirm that the change should be made. Once the third is pressed the colors should reset. The final button will be used to access the second screen which will show all the changes that have been made. Hopefully I will have little 'x's next to them to revert the change but that may not be feasible. This whole thing seems like a big stretch with my limited knowledge but we'll see what happens. 
