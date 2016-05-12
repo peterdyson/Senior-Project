@@ -42,3 +42,7 @@ I've decided to change the format of the project. Now instead of having three sc
 This is very interesting. I tried to import the library by including both a statement saying its dependent on the color picker. Then that didn't work for some reason. So I tried to putting an include "color picker file name" in the gradle settings. That fixed a lot of the problems but not all of them. I feel like I'm still missing some part of the library but I don't know where to look to get it. Also including the file name generated three new files. So now I have the app file, a color picker file, a com.github.QuadFlask, and a 0.0.10 file. The last three files are all blank tho. But when I tried to copy the color picker dialogue into the file, most of its still says there's an error. 
 
 I think I was finally successful in installing the library into my build. There are still several problems with the build but hopefully I can fix those tomorrow. This project is incredibly frustrating.
+
+######May 12, 2016
+
+I'm going to start making a set of goals at the beginning of each day so that I have a set stopping point. Today my goals are to add the three buttons to the Color Picker app and to learn about hexadecimal colors and how android reads them. I have abandoned the idea of building my own app from the ground up and have chosen instead to modify the Color Picker to do what I want it to. Hopefully this will allow me to be more successful in this project.  
