@@ -52,3 +52,5 @@ I managed to add the two buttons and begin working on the dialog for the run but
 ######May 13, 2016
 
 Today I'm going to finish the dialog hopefully. I found some code to use online now I just have to make it work. That seems to be how I'm doing most things now. Finding a base to stand on then changing it to fit my purpose. I really don't know enough to write things from scratch. 
+
+I think I'm going to create an overlay of the screen. It won't be as effective but I can do it much easier than changing the actual colors. It'll be basically what they give you to fix the light disorders, a thin film that you can place over books or computer screens. Phones are harder because they're touch so this would allow you to just use this instead. Apparently overlays disable Android from installing apps due to the easy potential for scamming. 
