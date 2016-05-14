@@ -56,3 +56,7 @@ Today I'm going to finish the dialog hopefully. I found some code to use online 
 I think I'm going to create an overlay of the screen. It won't be as effective but I can do it much easier than changing the actual colors. It'll be basically what they give you to fix the light disorders, a thin film that you can place over books or computer screens. Phones are harder because they're touch so this would allow you to just use this instead. Apparently overlays disable Android from installing apps due to the easy potential for scamming. 
 
 I managed to write the confirmation dialog to Android Studio's liking, however I can't seem to get it to run off of the button. I tried several different things but none of them seem to work. I tried several different ways of recieving the output but they won't run. The button's in a different activities xml file and that might be messing with it. Tomorrow I'll try using intents to activate that program. We'll see how it goes. 
+
+######May 14, 2016
+
+I've run into the weirdest problem. So java won't let me put the second dialog in the same folder as the first so I had to move it into another folder. Then in order to run that file I have to use intents. Once that file runs though, it doesn't just run the dialog, it changes the layout as well. Then you have to click on the run button a second time in order for the dialog to pop up. But when I tried to put the dialog just into one folder, it gave a ton of errors.
