@@ -60,3 +60,5 @@ I managed to write the confirmation dialog to Android Studio's liking, however I
 ######May 14, 2016
 
 I've run into the weirdest problem. So java won't let me put the second dialog in the same folder as the first so I had to move it into another folder. Then in order to run that file I have to use intents. Once that file runs though, it doesn't just run the dialog, it changes the layout as well. Then you have to click on the run button a second time in order for the dialog to pop up. But when I tried to put the dialog just into one folder, it gave a ton of errors.
+
+And it works!! The Alert Dialog Fragment just had to be put under the Sample Activity Class. Getting everything in the right brackets is pretty hard when transferring code between classes. Now I will put an intent statement under the confirm button that runs the overlay part. 
