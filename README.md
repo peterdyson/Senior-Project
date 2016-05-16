@@ -65,4 +65,4 @@ And it works!! The Alert Dialog Fragment just had to be put under the Sample Act
 
 ######May 16, 2016
 
-Today I'm starting the overlay part of the project. This is should comprise the bulk of what the work I'll do on the project. Everything I've done so far has been leading up to this. 
+Today I'm starting the overlay part of the project. This is should comprise the bulk of what the work I'll do on the project. Everything I've done so far has been leading up to this. Fun day today. I made an overlay that should go over the screen on every app. Unfortunately I have no idea how to set the color. This also means that there's no way to test if it's actually working because it's a blank screen. 
