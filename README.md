@@ -66,3 +66,11 @@ And it works!! The Alert Dialog Fragment just had to be put under the Sample Act
 ######May 16, 2016
 
 Today I'm starting the overlay part of the project. This is should comprise the bulk of what the work I'll do on the project. Everything I've done so far has been leading up to this. Fun day today. I made an overlay that should go over the screen on every app. Unfortunately I have no idea how to set the color. This also means that there's no way to test if it's actually working because it's a blank screen. 
+
+######May 17, 2016
+
+This project is starting to get enjoyable. It's still extremely frustrating, but I'm starting to learn enough to move code into where it's supposed to be. 
+
+Just as I say that the next part gets extremely annoying. I put the method getSystemService into one Colors, only to realize that the section its in needs to be its own activity, ColorOverlay. Then upon transferring it into the new activity android no longer recognizes getSystemService as a method even though it's defined under the import Context which I imported into both. In order to fix the error on that line, I have to have the class extend IntentService, but that triggers another error saying that Service needs to be an abstract class. Turns out it was supposed to be the Service class I just had to use IBinder to do do something. 
+
+Next problem. The program crashes when trying to run the overlay. It says that "ColorOverlay" needs to be defined as an activity in the manifest.xml file. When I define it as an activity, android studio says its wrong and should be defined as a class. 
