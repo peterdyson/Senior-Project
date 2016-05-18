@@ -76,3 +76,7 @@ Just as I say that the next part gets extremely annoying. I put the method getSy
 Next problem. The program crashes when trying to run the overlay. It says that "ColorOverlay" needs to be defined as an activity in the manifest.xml file. When I define it as an activity, android studio says its wrong and should be defined as a class. Changed the startActivity to startService and it works. Also defined ColorOverlay as a service. Had to give it permission to access the rest of the phone. It works with a set hex value now I need to make it work with the variable. The color selector outputs a integer which is weird. I think it's supposed to be a hex string. 
 
 In order for this to work, the value has to be in the format 0xAARRGGBB. Where A is the alpha value, R is red, G is green and B is blue. However, the value that the color selector outputs is an integer and doesn't have the 0x on the front. So somehow I have to put that there then assign it to a new variable. 
+
+######May 18, 2016
+
+Today I should have a working project! All I have to do is make a the selectedColor into a global variable. I'm going to do that using shared preferences. Hopefully this will not only allow other activities to access the variable but it should also save it between startups which would be nice. 
