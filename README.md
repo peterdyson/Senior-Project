@@ -80,3 +80,9 @@ In order for this to work, the value has to be in the format 0xAARRGGBB. Where A
 ######May 18, 2016
 
 Today I should have a working project! All I have to do is make a the selectedColor into a global variable. I'm going to do that using shared preferences. Hopefully this will not only allow other activities to access the variable but it should also save it between startups which would be nice. 
+
+I think I've managed to create a sharedpreference string. But I can't seem to call it. For some reason android studio keeps saying it doesn't recognize the name.
+
+######May 19, 2016
+
+And the app works! The only problem is you can create overlays that completely hide the screen. I managed to create the sharedpreferences. I had to import Colors into ColorOverlay in order to make it work. But now I can effectively bluescreen my phone over and over. The app doesn't have any way to call an onDestroy() for the overlay so it remains until you reboot. I'll try to implement one of those today. Also I'm going to try to limit the Alpha channels levels so that it doesn't completely cover the screen.
