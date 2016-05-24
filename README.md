@@ -86,3 +86,9 @@ I think I've managed to create a sharedpreference string. But I can't seem to ca
 ######May 19, 2016
 
 And the app works! The only problem is you can create overlays that completely hide the screen. I managed to create the sharedpreferences. I had to import Colors into ColorOverlay in order to make it work. But now I can effectively bluescreen my phone over and over. The app doesn't have any way to call an onDestroy() for the overlay so it remains until you reboot. I'll try to implement one of those today. Also I'm going to try to limit the Alpha channels levels so that it doesn't completely cover the screen.
+
+######May 23, 2016
+
+Over the last several days I've trying to implement a way to remove the overlay. I think I created a way to do it but I'm not sure. I think the app calls a method when it gets cancelled out called onDestroy(). This can be set up to remove the overlay. However, it only works if you close the app exit it out, open it again then close it out again. Also the first time you close the app it removes the overlay for a second then it comes back. It then removes the overlay but if you try to open the app back up again the entire screen is overlayed with a white color. Then if you click the button to close apps down and manage to swipe off of the app it removes the overlay for about 10 seconds then it comes back. 
+
+The app has to be creating an overlay on start or on destroy. The white value is the default value of the app when it boots up. So when it must be setting the chosen color value equal to the white then when it boots up again it activates that color as an overlay? 
