@@ -96,3 +96,7 @@ The app has to be creating an overlay on start or on destroy. The white value is
 ######May 24, 2016
 
 Today I did a lot of things. First I set up a way to remove the overlay but for some reason it doesn't work right. Then I tried to change the app launch picture but my computer ran out of memory and froze when I tried to upload the picture I wanted. So I tried again and it froze again. So I don't think I'll be able to change my app selector.  
+
+######May 26, 2016
+
+Finishing off the background and being done with the project! Overall this has been a fun experience but not sure I would ever try to do something like this again. Going in knowing nothing made everything way harder than it should have been. 
