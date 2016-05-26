@@ -109,7 +109,38 @@
 
 <p>Just as I say that the next part gets extremely annoying. I put the method getSystemService into one Colors, only to realize that the section its in needs to be its own activity, ColorOverlay. Then upon transferring it into the new activity android no longer recognizes getSystemService as a method even though it's defined under the import Context which I imported into both. In order to fix the error on that line, I have to have the class extend IntentService, but that triggers another error saying that Service needs to be an abstract class. Turns out it was supposed to be the Service class I just had to use IBinder to do do something. </p>
 
-<p>Next problem. The program crashes when trying to run the overlay. It says that "ColorOverlay" needs to be defined as an activity in the manifest.xml file. When I define it as an activity, android studio says its wrong and should be defined as a class. </p>
+<p>Next problem. The program crashes when trying to run the overlay. It says that "ColorOverlay" needs to be defined as an activity in the manifest.xml file. When I define it as an activity, android studio says its wrong and should be defined as a class. Changed the startActivity to startService and it works. Also defined ColorOverlay as a service. Had to give it permission to access the rest of the phone. It works with a set hex value now I need to make it work with the variable. The color selector outputs a integer which is weird. I think it's supposed to be a hex string. </p>
+
+<p>In order for this to work, the value has to be in the format 0xAARRGGBB. Where A is the alpha value, R is red, G is green and B is blue. However, the value that the color selector outputs is an integer and doesn't have the 0x on the front. So somehow I have to put that there then assign it to a new variable. </p>
+
+<h6>
+<a id="may-18-2016" class="anchor" href="#may-18-2016" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>May 18, 2016</h6>
+
+<p>Today I should have a working project! All I have to do is make a the selectedColor into a global variable. I'm going to do that using shared preferences. Hopefully this will not only allow other activities to access the variable but it should also save it between startups which would be nice. </p>
+
+<p>I think I've managed to create a sharedpreference string. But I can't seem to call it. For some reason android studio keeps saying it doesn't recognize the name.</p>
+
+<h6>
+<a id="may-19-2016" class="anchor" href="#may-19-2016" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>May 19, 2016</h6>
+
+<p>And the app works! The only problem is you can create overlays that completely hide the screen. I managed to create the sharedpreferences. I had to import Colors into ColorOverlay in order to make it work. But now I can effectively bluescreen my phone over and over. The app doesn't have any way to call an onDestroy() for the overlay so it remains until you reboot. I'll try to implement one of those today. Also I'm going to try to limit the Alpha channels levels so that it doesn't completely cover the screen.</p>
+
+<h6>
+<a id="may-23-2016" class="anchor" href="#may-23-2016" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>May 23, 2016</h6>
+
+<p>Over the last several days I've trying to implement a way to remove the overlay. I think I created a way to do it but I'm not sure. I think the app calls a method when it gets cancelled out called onDestroy(). This can be set up to remove the overlay. However, it only works if you close the app exit it out, open it again then close it out again. Also the first time you close the app it removes the overlay for a second then it comes back. It then removes the overlay but if you try to open the app back up again the entire screen is overlayed with a white color. Then if you click the button to close apps down and manage to swipe off of the app it removes the overlay for about 10 seconds then it comes back. </p>
+
+<p>The app has to be creating an overlay on start or on destroy. The white value is the default value of the app when it boots up. So when it must be setting the chosen color value equal to the white then when it boots up again it activates that color as an overlay? </p>
+
+<h6>
+<a id="may-24-2016" class="anchor" href="#may-24-2016" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>May 24, 2016</h6>
+
+<p>Today I did a lot of things. First I set up a way to remove the overlay but for some reason it doesn't work right. Then I tried to change the app launch picture but my computer ran out of memory and froze when I tried to upload the picture I wanted. So I tried again and it froze again. So I don't think I'll be able to change my app selector.  </p>
+
+<h6>
+<a id="may-26-2016" class="anchor" href="#may-26-2016" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>May 26, 2016</h6>
+
+<p>Finishing off the background and being done with the project! Overall this has been a fun experience but not sure I would ever try to do something like this again. Going in knowing nothing made everything way harder than it should have been. </p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/peterdyson/Senior-Project">Senior-project</a> is maintained by <a href="https://github.com/peterdyson">peterdyson</a>.</span>
